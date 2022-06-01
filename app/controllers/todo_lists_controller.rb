@@ -53,6 +53,7 @@ class TodoListsController < ApplicationController
 
   # DELETE /todo_lists/1
   # DELETE /todo_lists/1.json
+
   def destroy
     @todo_list.destroy
     respond_to do |format|
