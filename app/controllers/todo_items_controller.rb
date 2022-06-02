@@ -6,6 +6,8 @@ class TodoItemsController < ApplicationController
     @todo_item = @todo_list.todo_items.create(todo_item_params)
     redirect_to @todo_list
   end
+  def show
+  end
 
   def destroy
     if @todo_item.destroy
